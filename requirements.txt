@@ -1,0 +1,10 @@
+selenium
+webdriver-manager
+fake-headers
+pydantic
+langchain-google-genai
+openai
+requests
+python-dotenv
+undetected-chromedriver
+selenium-stealth

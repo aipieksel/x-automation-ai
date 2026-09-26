@@ -1,0 +1,20 @@
+[
+  {
+    "account_id": "example-account",
+    "is_active": false,
+    "cookie_file_path": "data/cookies/local.json",
+    "self_handles": [
+      "your_handle"
+    ],
+    "proxy": null,
+    "post_to_community": false,
+    "community_id": null,
+    "community_name": null,
+    "target_keywords_override": [
+      "your topic"
+    ],
+    "competitor_profiles_override": [
+      "https://x.com/YOUR_SOURCE_HANDLE"
+    ]
+  }
+]
