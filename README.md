@@ -2,7 +2,15 @@
 
 Maintained by [aipieksel](https://github.com/aipieksel). Based on the upstream Twitter Automation AI project; its [MIT license](LICENSE) and author notice are retained.
 
-A Python/Selenium automation project for X with configurable accounts, content generation, replies, likes, reposts, community posting, proxy options, and per-account activity metrics. It supports OpenAI-compatible providers and Gemini. Browser selectors and provider model availability can change; live account actions need separate verification.
+X Automation AI is a configurable Python/Selenium project for operating X accounts you control. It combines browser actions with optional AI-generated content for posts, replies, likes, reposts, and community activity, then records per-account activity metrics. The examples are inactive until you supply your own account settings and session cookies.
+
+Each enabled account has its own topics, action settings, and provider configuration. The browser uses that account's signed-in session; model calls use the credentials you configure. Running the main module performs real account actions, so review the account and action settings before starting it. Browser selectors and provider availability can change with the external platforms.
+
+## How it works
+
+1. Create private settings from the examples and configure an account you own.
+2. Set its intended actions, content topics, model provider, and browser session.
+3. Start the scheduler only after reviewing the enabled actions and their effects.
 
 ## Start with your own configuration
 
@@ -24,7 +32,7 @@ After reviewing the configured account and intended actions, launch from the pro
 .venv/bin/python -m src.main
 ```
 
-This starts real automation for enabled accounts. It is not a dry-run command. The cleanup verification uses configuration fixtures only.
+This starts real automation for enabled accounts; it is not a dry-run command.
 
 ## Development and layout
 
